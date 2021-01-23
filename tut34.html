@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psudo selector before and after</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+
+
+        }
+
+
+        header::before {
+            background: url('https://source.unsplash.com/collection/190727/1600x900')no-repeat center center/cover;
+
+            content: "";
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            z-index: -1;
+            top: 0px;
+            left: 0px;
+            opacity: 0.3;
+            opacity: 0.3;
+
+        }
+
+        .navigation {
+            display: flex;
+            padding: 0px;
+            margin: 0px;
+        }
+
+        section {
+
+            height: 300px;
+            margin: 3px 230px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        h1 {
+            font-size: 4rem;
+            color: orangered;
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+            font-size: 25px;
+
+        }
+
+        /* section::before{
+            content: "this is content";
+        } */
+        a {
+            color: yellow;
+            text-decoration: none;
+
+        }
+
+        a:hover {
+            background-color: tomato;
+        }
+
+        p {
+            margin: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <!-- <a class="bar act" href="">HOME</a> -->
+                <li class="item"><a href="">Home</a></li>
+                <li class="item"><a href="">About</a></li>
+                <li class="item"><a href="">Services</a></li>
+                <li class="item"><a href="">ContactUs</a></li>
+                <li class="item"><a href="">Rohit</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1>Welcome to coding world</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi, fugit incidunt nihil explicabo esse,
+            exercitationem, voluptatum voluptates soluta porro vero dolore vitae? Ducimus deleniti veritatis magni!
+            Quam quia culpa doloribus ipsum sapiente ab deserunt.</p>
+       
+    </section>
+
+</body>
+
+</html>
